@@ -38,7 +38,7 @@ print(set1)
 #using set we can remove the duplicates from our list, because it removes them by itself
 # to remove the duplicates we can throw the array to the set and then set back to array
 # remeber!!! add() is for sets append() for arrays
-a = [7, 7, 1,1, 9,6,5,8,9,4,3]
+a = [7, 7, 1,1, 9,6,5,8,9,9,9,9,9,9,4,3]
 duplicate_items = set()
 unique_items = []
 for x in a:
@@ -47,3 +47,6 @@ for x in a:
         duplicate_items.add(x)
 print(duplicate_items)
 print(unique_items)
+
+for x in unique_items:
+    print(x , ":" ,a.count(x), "times")
